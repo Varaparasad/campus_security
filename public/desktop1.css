@@ -1,0 +1,63 @@
+*{
+    font-family: "Ubuntu", serif;
+}
+body{
+    background-image: url(Desktop\ -\ 18.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    margin: 0 0;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 300px;
+    width: 450px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.673), rgba(255, 255, 255, 0.311));
+    border-radius: 15px;
+    display: flex;
+    padding: 10px 10px;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.box h2{
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0;
+    font-size: 30px;
+    padding: 0 0;
+}
+
+.bottons{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+    flex-direction: column;
+    margin: 10px 15px;
+}
+.bottons button{
+    background-color: black;
+    border: 3px solid black;
+    margin: 4px;
+    font-size: 25px;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    font-weight: 400;
+}
+.bottons button:hover{
+    background-color: transparent;
+    border: 3px solid black;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+}

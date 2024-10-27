@@ -1,0 +1,209 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #2f3a40;
+  }
+  /* Sidebar */
+  .sidebar {
+    width: 300px;
+    background-color: #2f3a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .sidebar .logo {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav a {
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .sidebar nav a:hover {
+    color: #fdb316;
+  }
+  
+  .sidebar nav a i {
+    margin-right: 10px;
+  }
+  .sidebar nav a.active {
+    color: #fdb316;
+}
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    background-color: #ffffff;
+    color: #2f3a40;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .section-title {
+    font-size: 43px;
+    font-weight: bold;
+    /* margin-top: 20px; */
+  }
+  
+  .leave-tiles {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .leave-tile {
+    background-color: #c0c0c0;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+  }
+  /* Add these styles to your existing CSS */
+
+/* Leave selection buttons */
+.leave-buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.casual{
+  background-color: #fdb316;
+  color: #2f3a40;
+  border: 0px;
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.long,.medical {
+  padding: 15px 25px;
+  font-size: 25px;
+  border: 3px solid #2f3a40;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+.medical:hover {
+  border-color: #fdb316;
+  background-color: #fdb316;
+}
+.long:hover{
+  border-color: #fdb316;
+  background-color: #fdb316;
+}
+.form {
+    background-color: rgba(217,217,217,0.4);
+    padding: 25px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 73%;
+    align-items: center;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.form input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(217,217,217);
+    height: 25px;
+    color: #2f3a40;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.form textarea{
+  width: 92%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: rgb(217,217,217);
+  height: 100px;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.character-count {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    background-color: #f0ad4e;
+    border: none;
+    font-size: larger;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #2f3a40;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.formelements{
+    width:50%;
+}
+.text{
+    width: fit-content;
+}
+.apply-leave-content{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+.button{
+  padding-top: 10px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .form {
+      flex-direction: column; /* Adjust layout for smaller screens */
+  }
+
+  .form-group {
+      flex-direction: column; /* Adjust layout for smaller screens */
+  }
+
+  .form-input,
+  .form-textarea {
+      width: 100%; /* Make input fields full width on smaller screens */
+  }
+}

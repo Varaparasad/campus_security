@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Dashboard</title>
+  <link rel="stylesheet" href="leaveform.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">A</div>
+    <nav>
+      <a href="http://127.0.0.1:3000/dashboard.html"><i class="icon1">🏠</i> Dashboard</a>
+      <a href="#" class="active"><i class="icon2">✉️</i> Apply leave</a>
+      <a href="http://127.0.0.1:3000/history.html"><i class="icon3">🔄</i> History</a>
+      <a href="http://127.0.0.1:3000/profile.html"><i class="icon4">👤</i> Profile</a>
+    </nav>
+  </div>
+  <!-- Main Content -->
+  <div class="main-content" id="main-content">
+    <!-- Apply Leave Form (hidden by default) -->
+    <div id="apply-leave-content">
+      <div class="section-title">Choose a leave format</div>
+      <div class="leave-buttons">
+        <button onclick="showCasualLeaveForm()">Casual leave</button>
+        <button onclick="showMedicalLeaveForm()">Medical leave</button>
+        <button onclick="showLongLeaveForm()">Long leave</button>
+      </div>
+   </div>
+  </div>
+  <script src="1.js"></script>
+</body>
+</html>

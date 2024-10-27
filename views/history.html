@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Dashboard</title>
+  <link rel="stylesheet" href="history.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">A</div>
+    <nav>
+      <a href="http://127.0.0.1:3000/dashboard.html"><i class="icon">⬜️</i> Dashboard</a>
+      <a href="http://127.0.0.1:3000/leaveform.html"><i class="icon">✉️</i> Apply leave</a>
+      <a href="#" class="active"><i class="icon">🔄</i> History</a>
+      <a href="http://127.0.0.1:3000/profile.html"><i class="icon">👤</i> Profile</a>
+    </nav>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2 class="section-title">Your history</h2>
+    <div class="history-table">
+      <div class="header">
+        <div>Leave type</div>
+        <div class="status1">Status</div>
+        <div class="from2">From-to</div>
+        <div>Remarks</div>
+      </div>
+      <div class="history-row">
+        <div class="inside">Casual leave</div>
+        <div class="status" data-status="approved">Approved</div>
+        <div class="inside">xx:xx a.m. - xx:xx p.m.</div>
+        <div class="inside">Remarks</div>
+      </div>
+      <div class="history-row">
+        <div class="inside">Medical leave</div>
+        <div class="status" data-status="pending">Pending</div>
+        <div class="inside">dd/mm/yy - dd/mm/yy</div>
+        <div class="inside">Remarks</div>
+      </div>
+      <div class="history-row">
+        <div class="inside">Long leave</div>
+        <div class="status" data-status="rejected">Rejected</div>
+        <div class="inside">dd/mm/yy - dd/mm/yy</div>
+        <div class="inside">Remarks</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="history.js"></script>
+</body>
+</html>

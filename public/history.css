@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #2f3a40;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background-color: #2f3a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.sidebar .logo {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-top: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.sidebar nav a.active {
+    color: #fdb316;
+}
+
+.sidebar nav a i {
+    margin-right: 10px;
+}
+  .sidebar nav a:hover {
+    color: #fdb316;
+  }
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    color: #2f3a40;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.section-title {
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* History Table */
+.history-table {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.history-row {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    /* width: 100px;
+    gap: 50px; */
+}
+.inside{
+    width: 200px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    gap: 100px;
+}
+/* .header .status{
+    padding-left: 60px;
+    padding-right: 60px;
+} */
+.header div{
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.status1{
+    padding-left: 20px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+.from2{
+    padding-right: 80px;
+    font-weight: bold;
+}
+
+.history-row:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.history-row:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+/* Status Colors */
+.status {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status.approved {
+    color: green;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.rejected {
+    color: red;
+}

@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #3a3b50;
+  }
+  /* Sidebar */
+  .sidebar {
+    width: 300px;
+    background-color: #3a3b50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .sidebar .logo {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav a {
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .sidebar nav a:hover {
+    color: #fdb316;
+  }
+  
+  .sidebar nav a i {
+    margin-right: 10px;
+  }
+  
+  /* Main content */
+ 
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    color: #2f3a40;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.leave-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.leave-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f3a40;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; /* Make the form responsive */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-label {
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make input fields full width */
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f3a40;
+    color: #fff;
+    cursor: pointer;
+    align-self: center; /* Center the button horizontally */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .section-title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .leave-buttons button {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+}

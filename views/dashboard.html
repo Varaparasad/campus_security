@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="dashboard.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">A</div>
+    <nav>
+      <a href="#" class="active" onclick="showDashboard()"><i class="icon">🏠</i> Dashboard</a>
+      <a href="http://127.0.0.1:3000/leaveform.html" onclick="showApplyLeave()"><i class="icon">✉️</i> Apply leave</a>
+      <a href="http://127.0.0.1:3000/history.html" onclick="showHistory()"><i class="icon">🔄</i> History</a>
+      <a href="http://127.0.0.1:3000/profile.html" onclick="showProfile()"><i class="icon">👤</i> Profile</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="main-content">
+    <div id="dashboard-content" class="dashboard-content">
+      <div class="section-title">Pending Requests</div>
+      <div class="request-list">
+        <div class="request-item">
+          <div class="element">Casual leave</div>
+          <div class="element">sent at xx:xx a.m.</div>
+            <div class="element">sent at xx:xx a.m.</div>
+        </div>
+        <div class="request-item">
+          <div class="element">Medical leave</div>
+          <div class="element">sent at xx:xx a.m.</div>
+          <div class="element">dd-mm-yyyy</div>
+        </div>
+      </div>
+
+      <div class="section-title">Approved Leaves</div>
+      <div class="leave-list">
+        <div class="leave-item">
+          <div class="element">Medical leave</div>
+          <div class="element">approved at xx:xx a.m.</div>
+          <div class="element">dd-mm-yyyy</div>
+        </div>
+        <div class="leave-item">
+          <div class="element">Long leave</div>
+          <div class="element">approved at xx:xx a.m.</div>
+          <div class="element">dd-mm-yyyy</div>
+        </div>
+      </div>
+
+      <div class="section-title">Leaves Taken</div>
+      <div class="leave-tiles">
+        <div class="leave-tile"><div>Casual leaves:</div>
+          <div id="casualleaves">00</div>
+        </div>
+        <div class="leave-tile"><div>Medical leaves:</div>
+          <div id="medicalleaves">00</div>
+        </div>
+        <div class="leave-tile"><div>Long leaves:</div>
+          <div id="longleaves">00</div>
+      </div>
+</body>
+</html>

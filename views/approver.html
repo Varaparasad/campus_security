@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Dashboard</title>
+  <link rel="stylesheet" href="approver.css">
+  <script src="dashboard.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">A</div>
+    <nav>
+      <a href="#" class="active" onclick="showDashboard()"><i class="icon">🏠</i> Casual leave</a>
+      <a href="http://127.0.0.1:3000/approver1.html" onclick="showApplyLeave()"><i class="icon">✉️</i> Medical leave</a>
+      <a href="http://127.0.0.1:3000/approver2.html" onclick="showHistory()"><i class="icon">🔄</i> Long leave</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="main-content">
+    <div class="approver-section">
+        <h2>Approver Details</h2>
+        <div class="approver-form">
+            <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            
+            </div>
+            <div>
+                <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="contact">Contact no:</label>
+            <input type="tel" id="contact" name="contact">
+            
+        </div>
+        </div>
+        <div class="button">
+        <button class="add-approver-btn">Add Approver</button>
+        <button class="add-approver-btn">Done</button>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

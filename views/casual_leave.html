@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Dashboard</title>
+  <link rel="stylesheet" href="casual_leave.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">A</div>
+    <nav>
+      <a href="http://127.0.0.1:3000/dashboard.html"><i class="icon1">🏠</i> Dashboard</a>
+      <a href="#" class="active"><i class="icon2">✉️</i> Apply leave</a>
+      <a href="http://127.0.0.1:3000/history.html"><i class="icon3">🔄</i> History</a>
+      <a href="http://127.0.0.1:3000/profile.html"><i class="icon4">👤</i> Profile</a>
+    </nav>
+  </div>
+  <!-- Main Content -->
+  <div class="main-content" id="main-content">
+    <!-- Apply Leave Form (hidden by default) -->
+    <div id="apply-leave-content" class="apply-leave-content">
+      <div class="section-title">Choose a leave format</div>
+      <div class="leave-buttons">
+        <button class="casual">Casual leave</button>
+        <button class="medical" onclick="showMedicalLeaveForm()">Medical leave</button>
+        <button class="long"onclick="showLongLeaveForm()">Long leave</button>
+        </div>
+        <div class="form">
+            <form action="/user/casualleaverequest" method="post">
+            <div class="fullflex">
+            <div class="flex">
+            <div class="formelements">
+            <label for="date">Requesting Leave On:</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="outtime">Out Time:</label>
+            <input type="time" id="outtime" name="outtime">
+            </div>
+            <div class="formelements">
+            <label for="place">Place of Visit:</label>
+            <input type="text" id="place" name="place">
+            
+            <label for="intime">In Time:</label>
+            <input type="time" id="intime" name="intime">
+            </div>
+            </div>
+            <div class:"text">
+            <label class ="reason" for="reason">Reason:</label>
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+            </div>
+            <div class="button">
+            <button type="submit">Submit</button>
+            </div>
+          </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="1.js"></script>
+</body>
+</html>
